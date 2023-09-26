@@ -1,21 +1,23 @@
 package Oppgave1;
 
 public class Currency {
-    String currencyName;
-    double currencyAmount;
-    double currencyExchangeRate;
-    public Currency(String name, double amount, double exchangeRate){
-        currencyName = name;
-        currencyAmount = amount
-        currencyExchangeRate = exchangeRate;
+    private final String name;
+    private final double exchangeRate;
+    public Currency(String name, double exchangeRate){
+        this.name = name;
+        this.exchangeRate = exchangeRate;
     }
 
-    public double convertToNok(){
-        return currencyAmount * currencyExchangeRate;
+    public String getName(){
+        return this.name;
     }
 
-    public double convertFromNok(){
-        return currencyAmount / currencyExchangeRate;
+    public double convertToNok(double amount){
+        return amount * this.exchangeRate;
+    }
+
+    public double convertFromNok(double amount){
+        return amount / this.exchangeRate;
     }
 
     public static void main(String[] args) {
