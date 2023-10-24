@@ -14,6 +14,13 @@ public class TaskOverview {
         this.numberOfStudents++;
     }
 
+    public TaskOverview(Student[] students){
+        for (Student student : students){
+            this.students.add(student);
+            this.numberOfStudents++;
+        }
+    }
+
     public ArrayList<Student> getRegisteredStudents(){
         return this.students;
     }
@@ -39,6 +46,7 @@ public class TaskOverview {
         }
     }
 
+    @Override
     public String toString(){
         return "There are " + this.numberOfStudents + " students registered.";
     }

@@ -21,6 +21,7 @@ public class Student {
         this.tasks += amount;
     }
 
+    @Override
     public String toString(){
         return this.name + " has done " + this.tasks + " tasks.";
     }

@@ -38,7 +38,7 @@ public class Register {
         List<Dish> dishes = new ArrayList<>();
 
         for(String dishName : dishNames){
-            Dish dish = findDish(dishName);
+            Dish dish = findDish(dishName)  ;
 
             if(dish == null){
                 System.out.println("Dish " + dishName + " not found");
