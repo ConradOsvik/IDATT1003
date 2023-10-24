@@ -13,5 +13,8 @@ public class Main {
         System.out.println(worker.getMonthlyTax());
         System.out.println(worker.grossSalary());
         System.out.println(worker.getTax());
+        System.out.println(worker.getName());
+        System.out.println(worker.getAge());
+        System.out.println(worker.getIfHiredLongerThan(4));
     }
 }

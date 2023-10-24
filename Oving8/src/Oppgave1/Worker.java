@@ -75,4 +75,9 @@ public class Worker {
     public boolean getIfHiredLongerThan(int year){
         return year > this.getYearsInCompany();
     }
+
+    @Override
+    public String toString(){
+        return String.format("Name: %s\nAge: %d\nWorker number: %d\nHiring year: %d\nMonthly salary: %.2f\nTax rate: %.2f\nMonthly tax: %.2f\nGross salary: %.2f\nTax: %.2f\n", this.getName(), this.getAge(), this.getWorkerNr(), this.getHiringYear(), this.getMonthlySalary(), this.getTaxRate(), this.getMonthlyTax(), this.grossSalary(), this.getTax());
+    }
 }

@@ -3,11 +3,13 @@ package Oppgave1;
 import java.util.ArrayList;
 
 public class TaskOverview {
-    private final ArrayList<Student> students;
+    private final ArrayList<Student> students = new ArrayList<Student>();
     private int numberOfStudents = 0;
 
+    public TaskOverview(){
+    }
+
     public TaskOverview(Student student){
-        this.students = new ArrayList<Student>();
         this.students.add(student);
         this.numberOfStudents++;
     }

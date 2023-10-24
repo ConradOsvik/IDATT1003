@@ -11,5 +11,6 @@ public class Main {
         student.addTasks(1);
         taskOverview.addTasksToStudent("Ola", 1);
         System.out.println(taskOverview.getTasksByStudent("Ola"));
+        System.out.println(taskOverview.getRegisteredStudents());
     }
 }
